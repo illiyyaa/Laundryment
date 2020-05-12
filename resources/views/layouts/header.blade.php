@@ -55,7 +55,8 @@
         <ul class="main-nav nav-inline" style="padding: px 0; text-align: align-left;">
             <div class="row">
             <li class="nav-item kz-nav-item col-md-2">
-                <a class="nav-link kz-nav-link beranda" href="{{ url('/beranda') }}">
+                <a class="nav-link kz-nav-link beranda" href="{{ url('/beranda') }}"
+                style="color: #ffffff;">
                     <i class="fa fa-home "></i>
                     <div class="dropdown">
                     <button class="dropbtn" id="dd-user-menu" type="button" data-toggle="dropdown" ria-haspopup="true" aria-expanded="false">
