@@ -12,7 +12,11 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <script defer src="script.js"></script>
-    <div class="container">
+    <div class="container" 
+    style="    
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -20%;">
     <div class="row justify-content-center">
         <div class="all-tasks">
             <h2 class="task-list-title">My lists</h2>
