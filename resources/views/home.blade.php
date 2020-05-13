@@ -1,13 +1,14 @@
-@extends('layouts.appreg')
+@extends('layouts.apphome')
 @extends('layouts.header')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-    
-        <img src="/img/orang.jpg" style="border-radius: 50%"> 
-       
-        
+        <img src="/img/orang.jpg" style="border-radius: 50%">
+    </div>
+    <br>
+    <div class="row justify-content-center">
+      <h1>Hai  {{ Auth::user()->name }} </h1>
     </div>
 </div>
 <footer>
@@ -44,12 +45,12 @@
                                 </div></a>
                         </div>
                         <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
-                                <a href="#"><div class="card-body" style="color: #FFFFFF">
+                                <a href="/delivery"><div class="card-body" style="color: #FFFFFF">
                                 Delivery
                                 </div><a>
                         </div>
                         <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
-                                <a href="#"><div class="card-body" style="color: #FFFFFF">
+                                <a href="/riwayatOrder"><div class="card-body" style="color: #FFFFFF">
                                 Riwayat Order
                                 </div><a>
                         </div>

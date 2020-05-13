@@ -42,7 +42,7 @@
 </style>
 
 
-<header class="site-header" style="background-color: #4bbd89; width: 400px;">
+<header class="site-header center" style="background-color: #4bbd89; margin-left: 490px; width: 400px;">
     <div class="container-fluid">
         <div class="site-header-content">
             <div class="site-header-content-in">
@@ -60,8 +60,8 @@
                     <button class="dropbtn" id="dd-user-menu" type="button" data-toggle="dropdown" ria-haspopup="true" aria-expanded="false">
                             <span><img src="https://img.icons8.com/ios/15/000000/menu.png">    Menu</span>
                             <div class="dropdown-menu-center dropdown-content" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout') }}">
-                                    {{ __('Home') }}
+                                <a class="dropdown-item" href="/home">
+                                    {{ __('home') }}
                                 </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}">
                                     {{ __('Antrian') }}

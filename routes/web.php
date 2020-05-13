@@ -19,3 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/antrian', 'AntrianController@index')->name('antrian');
+Route::get('/delivery', 'DeliveryController@index')->name('delivery');
+Route::get('/riwayatOrder', 'RiwayatorderController@index')->name('riwayatOrder');

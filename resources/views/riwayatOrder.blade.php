@@ -34,23 +34,19 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    Siap Membantu Anda
                     <br>
                     <br>
-                    <div class="row" style="margin-left: 360px;">
+                    <div class="row">
                         
                         <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
                                 <a href="#"><div class="card-body" style="color: #FFFFFF">
-                                Cuci
+                                Delivery
                                 </div><a>
                         </div>
                         <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
                                 <a href="#"><div class="card-body" style="color: #FFFFFF">
-                                Jemur
-                                </div><a>
-                        </div>
-                        <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
-                                <a href="#"><div class="card-body" style="color: #FFFFFF">
-                                Setrika
+                                Invoice
                                 </div><a>
                         </div>
                     </div>
