@@ -1,17 +1,19 @@
 @extends('layouts.apphome')
 @extends('layouts.header1')
 
-@section('content')
- <head>
+@section('head')
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/main.css" />
-    <script defer src="script.js"></script>
+    <script src="script.js"></script>
+</head>
+
+@section('content')
+<body>
     <div class="container" 
     style="    
     position: absolute;
@@ -73,8 +75,7 @@
         
     </div>
 </div>
-
-</head>
+</body>
 
 {{-- <footer>
 {{-- <div class="col-md-12">

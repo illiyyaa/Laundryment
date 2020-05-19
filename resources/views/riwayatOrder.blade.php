@@ -38,17 +38,36 @@
                     <br>
                     <br>
                     <div class="row">
-                        
-                        <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
-                                <a href="#"><div class="card-body" style="color: #FFFFFF">
-                                Delivery
-                                </div><a>
-                        </div>
-                        <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
-                                <a href="#"><div class="card-body" style="color: #FFFFFF">
-                                Invoice
-                                </div><a>
-                        </div>
+                        <a href="/riwayatOrder/tambah"> + Tambah Orderan Baru</a>
+                        <br>
+    
+    <br/>
+    <br/>
+
+    <table border="1">
+        <tr>
+            <th>Nomor Order</th>
+            <th>Nama Pelanggan</th>
+            <th>Alamat Pelanggan</th>
+            <th>Telpon Pelanggan</th>
+            <th>Status</th>
+        </tr>
+        @foreach($riwayatorder as $p)
+        <tr>
+            <td>{{ $p->nomor_order }}</td>
+            <td>{{ $p->nama_pelanggan }}</td>
+            <td>{{ $p->alamat_pelanggan }}</td>
+            <td>{{ $p->telp_pelanggan }}</td>
+            <td>{{ $p->status }}</td>
+            <td>
+                <a href="/riwayatOrder/edit/{{ $p->order_id }}">Edit</a>
+                |
+                <a href="/riwayatOrder/hapus/{{ $p->order_id }}">Hapus</a>
+            </td>
+        </tr>
+        @endforeach
+    </table>
+
                     </div>
                 </div>
             </div>
