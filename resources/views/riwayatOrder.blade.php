@@ -5,8 +5,7 @@
 <div class="container">
     <div class="row justify-content-center">
     
-        <img src="/img/orang.jpg" style="border-radius: 50%"> 
-       
+        <h2>Tabel Riwayat Order</h2> 
         
     </div>
 </div>
