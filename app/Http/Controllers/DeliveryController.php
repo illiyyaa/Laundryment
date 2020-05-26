@@ -1,28 +1,34 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
+use App\Task;
 class DeliveryController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
+     public function index(){
+        $tasks = Task::all();
+        return view('delivery', ['tasks'=>$tasks]);
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
-    {
-        return view('delivery');
+    public function create(Request $request){
+        if ($request->input('task')) {
+        $task = new Task;
+        $task->content = $request->input('task');
+        $task->save(); 
+    }
+    return redirect()->back();
+    }
+
+    public function update($id){
+        $task = Task::find($id);
+        $task->toggleStatus();
+        $task->save();
+        return redirect()->back();
+    }
+
+    public function delete($id){
+        $task = Task::find($id);
+        $task->delete();
+        return redirect()->back();
     }
 }

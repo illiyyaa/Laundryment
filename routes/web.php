@@ -26,3 +26,6 @@ Route::post('/riwayatOrder/store','RiwayatorderController@store');
 Route::get('/riwayatOrder/edit/{id}','RiwayatorderController@edit');
 Route::post('/riwayatOrder/update','RiwayatorderController@update');
 Route::get('/riwayatOrder/hapus/{id}','RiwayatorderController@hapus');
+Route::post('/create','DeliveryController@create')->name('create');
+Route::get('/update/{id}','DeliveryController@update')->name('update');
+Route::get('/delete/{id}','DeliveryController@delete')->name('delete');
