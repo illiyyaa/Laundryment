@@ -87,6 +87,7 @@ ul li.checked::before {
  margin-left: -29%;
   margin-top: 10%;
   position: absolute;
+  width: 32%;
 }
 /* Clear floats after the header */
 .header:after {
@@ -133,7 +134,7 @@ input {
 @section('content')
 <body>
     <div id="myDIV" class="header">
-      <h2 style="margin:5px">My To Do List</h2>
+      <h2 style="margin:5px">List Delivery</h2>
       <form method="POST" action="{{ route('create') }}" >
         <input type="text" name="task" id="myInput" placeholder="Title…">
         <input type="submit" value="Add" class="addBtn">
