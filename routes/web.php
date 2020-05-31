@@ -21,6 +21,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/antrian', 'AntrianController@index')->name('antrian');
 Route::get('/delivery', 'DeliveryController@index')->name('delivery');
 Route::get('/riwayatOrder', 'RiwayatorderController@index')->name('riwayatOrder');
+Route::get('/invoice', 'InvoiceController@index')->name('invoice');
+
 Route::get('/riwayatOrder/tambah','RiwayatorderController@tambah');
 Route::post('/riwayatOrder/store','RiwayatorderController@store');
 Route::get('/riwayatOrder/edit/{id}','RiwayatorderController@edit');
