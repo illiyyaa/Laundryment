@@ -28,6 +28,13 @@ Route::post('/riwayatOrder/store','RiwayatorderController@store');
 Route::get('/riwayatOrder/edit/{id}','RiwayatorderController@edit');
 Route::post('/riwayatOrder/update','RiwayatorderController@update');
 Route::get('/riwayatOrder/hapus/{id}','RiwayatorderController@hapus');
+
+
+
+Route::post('/create','AntrianController@create')->name('create');
+Route::get('/update/{id}','AntrianController@update')->name('update');
+Route::get('/delete/{id}','AntrianController@delete')->name('delete');
+
 Route::post('/create','DeliveryController@create')->name('create');
 Route::get('/update/{id}','DeliveryController@update')->name('update');
 Route::get('/delete/{id}','DeliveryController@delete')->name('delete');

@@ -15,8 +15,8 @@ class CreateQueueTable extends Migration
     {
         Schema::create('queues', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->var('content');
-            $table->var('status');
+            $table->string('content');
+            $table->string('status');
             $table->timestamps();
         });
     }

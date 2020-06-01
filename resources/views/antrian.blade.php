@@ -132,6 +132,7 @@ input {
 
 @section('content')
 <body>
+
     <div id="myDIV" class="header">
       <h2 style="margin:5px">My To Do List</h2>
       <form method="POST" action="{{ route('create') }}" >
@@ -146,7 +147,7 @@ input {
             @if($queue->status) class="checked" 
             @endif>
           {{ $queue->content }} 
-            <a href="{ route('delete', ['id'=>$queue->id]) }}" 
+            <a href="'{{ route('delete', ['id'=>$queue->id]) }}'" 
             class="close">X</a>
       </li>
     @endforeach
