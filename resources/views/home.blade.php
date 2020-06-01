@@ -55,7 +55,7 @@
                                 </div><a>
                         </div>
                         <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
-                                <a href="#"><div class="card-body" style="color: #FFFFFF">
+                                <a href="/invoice"><div class="card-body" style="color: #FFFFFF">
                                 Invoice
                                 </div><a>
                         </div>

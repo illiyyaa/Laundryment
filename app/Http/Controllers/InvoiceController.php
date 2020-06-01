@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
+use App\Invoice;
+use PDF;
 
 class InvoiceController extends Controller
 {
@@ -23,6 +27,17 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-        return view('invoice');
+        // mengambil data dari table pegawai
+        $invoice = DB::table('invoice')->get();
+ 
+        // mengirim data pegawai ke view index
+        return view('index',['invoice' => $invoice]);
+    }
+    public function cetak_pdf()
+    {
+        $invoice = invoice::all();
+ 
+        $pdf = PDF::loadview('invoice_pdf',['invoice'=>$invoice]);
+        return $pdf->stream();
     }
 }

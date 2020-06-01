@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateQueueTable extends Migration
+class CreateInvoiceTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,16 @@ class CreateQueueTable extends Migration
      */
     public function up()
     {
-        Schema::create('queues', function (Blueprint $table) {
+        Schema::create('invoice', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->bigIncrements('id');
-            $table->var('content');
-            $table->var('status');
             $table->timestamps();
+            $table->varchar('no_order');
+            $table->text('alamat');
+            $table->string('nama');
+            $table->string('items');
+            $table->integer('total');
+
         });
     }
 
@@ -29,6 +33,6 @@ class CreateQueueTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('queue');
+        Schema::dropIfExists('invoice');
     }
 }
