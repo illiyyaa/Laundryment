@@ -25,13 +25,13 @@ class InvoiceController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function indeks()
     {
         // mengambil data dari table pegawai
         $invoice = DB::table('invoice')->get();
  
         // mengirim data pegawai ke view index
-        return view('index',['invoice' => $invoice]);
+        return view('indeks',['invoice' => $invoice]);
     }
     public function cetak_pdf()
     {

@@ -9,7 +9,7 @@
     <div class="container">
         <center>
             <h4>Membuat Laporan PDF Dengan DOMPDF Laravel</h4>
-            <h5><a target="_blank" href="https://www.malasngoding.com/membuat-laporan-…n-dompdf-laravel/">www.malasngoding.com</a></h5>
+            <h5><a target="_blank" href="#">Invoice Laundryment</a></h5>
         </center>
         <br/>
         <a href="/invoice/cetak_pdf" class="btn btn-primary" target="_blank">CETAK PDF</a>
