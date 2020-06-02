@@ -63,7 +63,7 @@ class RiwayatorderController extends Controller
 
     }
 
-    // update data pegawai
+    // update data 
     public function update(Request $request)
     {
         // update data order

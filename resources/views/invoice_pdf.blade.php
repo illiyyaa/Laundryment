@@ -11,7 +11,10 @@
 			font-size: 9pt;
 		}
 	</style>
- 	
+ 	<div class="logo-laundry">
+ 		<img src="https://camo.githubusercontent.com/722ff13bd24948f76b561d124140c1eaac5a6b6b/68747470733a2f2f692e696d6775722e636f6d2f336265323439522e706e67" alt="Italian Trulli">
+ 		<h2 style="text-align: right;">INVOICE</h2>
+ 	</div>
 	<table class='table table-bordered'>
 		<thead>
 			<tr>
@@ -35,6 +38,9 @@
 			@endforeach
 		</tbody>
 	</table>
- 
+	<br>
+	<br>
+	<br>
+ 	<h3 style="color:#4bbd89; text-align: right;">Total Bayar = {{ $p->total }}</h3>
 </body>
 </html>

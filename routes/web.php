@@ -45,7 +45,8 @@ Route::get('/delete/{id}','DeliveryController@delete')->name('delete');
 
 Route::get('/invoice','InvoiceController@indeks');
 Route::get('/invoice/cetak_pdf', 'InvoiceController@cetak_pdf');
-
+Route::get('/invoice/edits/{id}','InvoiceController@edits');
+Route::post('/invoice/update','InvoiceController@update');
 
 // Route::get('/', 'AntrianController@index');
 Route::get('antrian/tambahantrian', 'AntrianController@create');

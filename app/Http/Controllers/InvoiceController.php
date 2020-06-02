@@ -40,4 +40,23 @@ class InvoiceController extends Controller
         $pdf = PDF::loadview('invoice_pdf',['invoice'=>$invoice]);
         return $pdf->stream();
     }
+    public function edits($id)
+    {
+        $invoice = DB::table('invoice')->where('invoice_id',$id)->get();
+        return view('edits',['invoice' => $invoice]);
+    }
+    // update data 
+    public function update(Request $request)
+    {
+        // update data order
+        DB::table('invoice')->where('invoice_id',$request->id)->update([
+            'no_order' => $request->no_order,
+            'nama' => $request->nama,
+            'alamat' => $request->alamat,
+            'items' => $request->items,
+            'total' => $request->total
+        ]);
+        // alihkan halaman ke halaman riwayat order
+        return redirect('/invoice');
+    }
 }

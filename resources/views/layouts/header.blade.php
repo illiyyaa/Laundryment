@@ -53,11 +53,11 @@
         </div>
 
         <ul class="main-nav nav-inline" style="padding: px 0; text-align: align-left;">
-            <div class="row">
-                <a class="nav-link kz-nav-link " href="{{ url('/home') }}" style="color:#FFFFFF">
+            <div class="row" style="background-image: linear-gradient(to right, #4bbd89 , white);">
+                <a class="nav-link kz-nav-link " href="{{ url('/home') }}" style="background-color: #8bd5b3; color:#FFFFFF">
                     <i class="fa fa-home "></i>
                     <div class="dropdown">
-                    <button class="dropbtn" id="dd-user-menu" type="button" data-toggle="dropdown" ria-haspopup="true" aria-expanded="false">
+                    <button class="dropbtn" id="dd-user-menu" type="button" data-toggle="dropdown" ria-haspopup="true" aria-expanded="false" style="background-color: #8bd5b3;">
                             <span><img src="https://img.icons8.com/ios/15/000000/menu.png">    Menu</span>
                             <div class="dropdown-menu-center dropdown-content" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}">
