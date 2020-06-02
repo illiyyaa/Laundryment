@@ -16,8 +16,8 @@ class CreateQueueTable extends Migration
         Schema::create('queues', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->bigIncrements('id');
-            $table->string('content');
-            $table->string('status');
+            $table->string('name');
+            $table->boolean('is_done')->default(false);
             $table->timestamps();
         });
     }

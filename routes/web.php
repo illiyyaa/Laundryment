@@ -18,7 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/antrian', 'AntrianController@index')->name('antrian');
+// Route::get('/antrian', 'AntrianController@index')->name('antrian');
 Route::get('/delivery', 'DeliveryController@index')->name('delivery');
 Route::get('/riwayatOrder', 'RiwayatorderController@index')->name('riwayatOrder');
 Route::get('/invoice', 'InvoiceController@index')->name('invoice');
@@ -45,3 +45,14 @@ Route::get('/delete/{id}','DeliveryController@delete')->name('delete');
 
 Route::get('/invoice','InvoiceController@indeks');
 Route::get('/invoice/cetak_pdf', 'InvoiceController@cetak_pdf');
+
+
+// Route::get('/', 'AntrianController@index');
+Route::get('antrian/tambahantrian', 'AntrianController@create');
+Route::get('antrian/antrian', 'AntrianController@index');
+Route::post('/antrian/antrian','AntrianController@store');
+Route::get('antrian/{id}/edit', 'AntrianController@edit');
+Route::put('antrian/{id}', 'AntrianController@update');
+Route::get('/antrian/{id}/delete', 'AntrianController@delete');
+
+

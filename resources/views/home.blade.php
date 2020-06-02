@@ -40,22 +40,22 @@
                     <br>
                     <div class="row">
                         <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px; margin-left:100px;">
-                                <a href="/antrian"><div class="card-body" style="color: #FFFFFF">
+                                <a href="{{ url('/antrian/antrian')}}"><div class="card-body" style="color: #FFFFFF">
                                 Antrian 
                                 </div></a>
                         </div>
                         <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
-                                <a href="/delivery"><div class="card-body" style="color: #FFFFFF">
+                                <a href="{{ url('/delivery')}}"><div class="card-body" style="color: #FFFFFF">
                                 Delivery
                                 </div><a>
                         </div>
                         <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
-                                <a href="/riwayatOrder"><div class="card-body" style="color: #FFFFFF">
+                                <a href="{{url ('/riwayatOrder')}}"><div class="card-body" style="color: #FFFFFF">
                                 Riwayat Order
                                 </div><a>
                         </div>
                         <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
-                                <a href="/invoice"><div class="card-body" style="color: #FFFFFF">
+                                <a href="{{url ('/invoice')}}"><div class="card-body" style="color: #FFFFFF">
                                 Invoice
                                 </div><a>
                         </div>

@@ -54,7 +54,7 @@
 
         <ul class="main-nav nav-inline" style="padding: px 0; text-align: align-left;">
             <div class="row">
-                <a class="nav-link kz-nav-link beranda" href="{{ url('/beranda') }}">
+                <a class="nav-link kz-nav-link" href="{{ url('/home') }}" style="color: #FFFFFF">
                     <i class="fa fa-home "></i>
                     <div class="dropdown">
                     <button class="dropbtn" id="dd-user-menu" type="button" data-toggle="dropdown" ria-haspopup="true" aria-expanded="false">
@@ -66,13 +66,13 @@
                                 <a class="dropdown-item" href="{{ route('logout') }}">
                                     {{ __('Antrian') }}
                                 </a>
-                                <a class="dropdown-item" href="{{ route('logout') }}">
-                                    {{ __('Delivery') }}
+                                <a class="dropdown-item" href="{{ url('/delivery')}}" target="_blank">
+                                       {{ __('Delivery') }}
                                 </a>
-                                <a class="dropdown-item" href="{{ route('logout') }}">
+                                <a class="dropdown-item" href="{{ url('/riwayatOrder') }}">
                                     {{ __('Riwayat Order') }}
                                 </a>
-                                <a class="dropdown-item" href="{{ route('logout') }}">
+                                <a class="dropdown-item" href="{{ url('logout') }}">
                                     {{ __('Invoice') }}
                                 </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"

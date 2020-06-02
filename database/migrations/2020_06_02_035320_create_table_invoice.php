@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInvoiceTable extends Migration
+class CreateTableInvoice extends Migration
 {
     /**
      * Run the migrations.
@@ -17,7 +17,7 @@ class CreateInvoiceTable extends Migration
             $table->engine = 'InnoDB';
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->varchar('no_order');
+            $table->string('no_order');
             $table->text('alamat');
             $table->string('nama');
             $table->string('items');

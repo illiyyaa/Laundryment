@@ -1,7 +1,132 @@
 @extends('layouts.apphome')
 @extends('layouts.header1')
 
-@section('head')
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <div class="panel panel-default">
+                {{-- <div class="panel-heading">Todo List</div> --}}
+                <div class="panel-body">
+                    <a href="{{ url('/antrian/tambahantrian') }}" class="btn" style="background-color: #4bbd89; color: #FFFFFF">Tambah Cucian</a>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Is Done</th>
+                                <th>Action</th>
+                            </th>
+
+                            @if(! count($queues))
+                                <tr>
+                                    <td colspan="3">No todo</td>
+                                </tr>
+                            @endif
+                            @foreach($queues as $queue)
+                                <tr>
+                                    <td>{{ $queue->name }}</td>
+                                    <td>{{ $queue->is_done ? 'Done' : 'Not Done' }}</td>
+                                    <td>
+                                        <a class="btn" style="background-color: #4bbd89; color: #FFFFFF" href="{{ url('antrian/edit'.$queue->id.'antrian/edit') }}">Edit</a>
+                                        <a class="btn btn-danger" href="{{ url('antrian/antrian'.$queue->id.'/delete') }}">Delete</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-md-4 col-md-offset-2">
+            <div class="panel panel-default">
+                {{-- <div class="panel-heading">Todo List</div> --}}
+                <div class="panel-body">
+                    <a href="{{ url('/antrian/tambahantrian') }}" class="btn" style="background-color: #4bbd89; color: #FFFFFF">Tambah Jemur</a>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Is Done</th>
+                                <th>Action</th>
+                            </th>
+
+                            @if(! count($queues))
+                                <tr>
+                                    <td colspan="3">No todo</td>
+                                </tr>
+                            @endif
+                            @foreach($queues as $queue)
+                                <tr>
+                                    <td>{{ $queue->name }}</td>
+                                    <td>{{ $queue->is_done ? 'Done' : 'Not Done' }}</td>
+                                    <td>
+                                        <a class="btn" style="background-color: #4bbd89; color: #FFFFFF" href="{{ url('antrian/edit'.$queue->id.'antrian/edit') }}">Edit</a>
+                                        <a class="btn btn-danger" href="{{ url('antrian/antrian'.$queue->id.'/delete') }}">Delete</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-md-offset-2">
+            <div class="panel panel-default">
+                {{-- <div class="panel-heading">Todo List</div> --}}
+                <div class="panel-body">
+                    <a href="{{ url('/antrian/tambahantrian') }}" class="btn" style="background-color: #4bbd89; color: #FFFFFF">Tambah Setrika</a>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Is Done</th>
+                                <th>Action</th>
+                            </th>
+
+                            @if(! count($queues))
+                                <tr>
+                                    <td colspan="3">No todo</td>
+                                </tr>
+                            @endif
+                            @foreach($queues as $queue)
+                                <tr>
+                                    <td>{{ $queue->name }}</td>
+                                    <td>{{ $queue->is_done ? 'Done' : 'Not Done' }}</td>
+                                    <td>
+                                        <a class="btn" style="background-color: #4bbd89; color: #FFFFFF" href="{{ url('antrian/edit'.$queue->id.'antrian/edit') }}">Edit</a>
+                                        <a class="btn btn-danger" href="{{ url('antrian/antrian'.$queue->id.'/delete') }}">Delete</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+@endsection
+
+
+{{-- @section('head')
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -153,7 +278,7 @@ input {
     @endforeach
     </ul> 
 </body>
-
+ --}}
 
 {{-- <footer>
 {{-- <div class="col-md-12">
@@ -183,7 +308,7 @@ input {
                 </div>
             </div>
         </div> --}}
-@endsection
+{{-- @endsection --}}
 
 {{-- @extends('layouts.appreg')
 @extends('layouts.header1')
