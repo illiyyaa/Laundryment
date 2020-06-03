@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-use App\Invoice;
+use App\invoice;
 use PDF;
 
 class InvoiceController extends Controller
