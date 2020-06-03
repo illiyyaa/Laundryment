@@ -27,13 +27,13 @@
 		</thead>
 		<tbody>
 			@php $i=1 @endphp
-			@foreach($invoice as $n)
+			@foreach($p as $invoice)
 			<tr>
-				<td>{{ $n->no_order }}</td>
-				<td>{{ $n->nama }}</td>
-				<td>{{ $n->alamat }}</td>
-				<td>{{ $n->items }}</td>
-				<td>{{ $n->total }}</td>
+				<td>{{ $p->no_order }}</td>
+				<td>{{ $p->nama }}</td>
+				<td>{{ $p->alamat }}</td>
+				<td>{{ $p->items }}</td>
+				<td>{{ $p->total }}</td>
 			</tr>
 			@endforeach
 		</tbody>
@@ -41,6 +41,6 @@
 	<br>
 	<br>
 	<br>
- 	<h3 style="color:#4bbd89; text-align: right;">Total Bayar = {{ $n->total }}</h3>
+ 	<h3 style="color:#4bbd89; text-align: right;">Total Bayar = {{ $p->total }}</h3>
 </body>
 </html>
