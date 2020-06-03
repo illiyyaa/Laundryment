@@ -5,7 +5,7 @@
 
 <footer>
 <div class="col-md-12">
-            <div class="card-invoice" style"background-color: white;display: flex;margin-top: 20%;position: absolute;margin-left: 25%;">
+            <div class="card-invoice" style="background-color: white;display: flex;margin-top: 20%;position: absolute;margin-left: 25%;">
                 <div class="card-header" style="display: none;"> <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     {{ Auth::user()->name }} <span class="caret"></span>
                 </a>

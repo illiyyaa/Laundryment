@@ -147,7 +147,7 @@ input {
             @if($task->status) class="checked" 
             @endif>
           {{ $task->content }} 
-            <a href="{ route('delete', ['id'=>$task->id]) }}" 
+            <a href="{{ route('delete', ['id'=>$task->id]) }}" 
             class="close">X</a>
       </li>
     @endforeach
