@@ -11,9 +11,9 @@ class DeliveryController extends Controller
     }
 
     public function create(Request $request){
-        if ($request->input('tasks')) {
+        if ($request->input('task')) {
         $task = new Task;
-        $task->content = $request->input('tasks');
+        $task->content = $request->input('task');
         $task->save(); 
     }
     return redirect()->back();
